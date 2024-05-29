@@ -1,0 +1,8 @@
+task: housing
+num_atoms: 101
+warmup_steps: 1
+gradient_steps: 1
+lr: 1e-4
+backprop_batch_size: 32
+batch_size: 32
+arff_file: /path/to/dataset.arff

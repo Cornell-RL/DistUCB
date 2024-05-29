@@ -1,0 +1,12 @@
+task: prudential
+num_atoms: 9
+warmup_steps: 1
+gradient_steps: 5
+lr: 1e-4
+backprop_batch_size: 32
+batch_size: 32
+
+prudential:
+  # add original train.csv and preoprocessed here
+  original: /path/to/train.csv
+  processed: /path/to/prudential_preprocessed.csv

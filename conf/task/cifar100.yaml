@@ -1,0 +1,8 @@
+task: cifar100
+num_atoms: 3
+warmup_steps: 1
+gradient_steps: 1
+lr: 1e-3
+batch_size: 32
+backprop_batch_size: 32
+

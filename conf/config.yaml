@@ -1,0 +1,18 @@
+wandb:
+  use_wandb: false
+  entity: ENTITY
+  project: PROJECT
+
+hydra:
+  run:
+    dir: outputs/${wandb.name}/${now:%Y-%m-%d_%H-%M-%S}
+
+alg: "distributional" # either "regcb" or "distributional"
+seed: 1
+is_optimistic: false
+time_horizon: 1000
+# get_ordering: false
+device: cuda
+defaults:
+  - _self_
+  - task: prudential # task either cifar100, housing, or prudential
